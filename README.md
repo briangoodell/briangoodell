@@ -106,10 +106,10 @@ I'm an enthusiastic woodworker, reinforced by my 3 and a half years working in a
       <br /><sub><em>The land around the same uncle's house, make to be the centerpiece of a train dominos set</em></sub>
     </td>
     <td align="center" valign="top">
-      <a href="images/RandomProjects/tableOil.jpg">
-        <img src="images/RandomProjects/tableOil.jpg" width="260" alt="The " />
+      <a href="images/RandomProjects/TableOil.jpg">
+        <img src="images/RandomProjects/TableOil.jpg" width="260" alt="A walnut table being oiled" />
       </a>
-      <br /><sub><em>My friend oils a beautiful walnut table border="0" cellspacing="0" cellpadding="0" role="presentation" as I advise him in the makerspace</em></sub>
+      <br /><sub><em>My friend oils a beautiful walnut table as I advise him in the makerspace</em></sub>
     </td>
   </tr>
 </table>
