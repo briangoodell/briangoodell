@@ -5,7 +5,7 @@ Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/)
 
 ### [AutoCellLabel Live](https://github.com/briangoodell/AutoCellLabel_Live/tree/main)
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
     <td valign="top">
       <p>
@@ -29,17 +29,17 @@ Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/)
 
 ### Nematode Matrix
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
-    <td valign="top" width="320">
+    <td valign="top" width="400">
       <img src="images/Flavell/UntitledLaserProject/LaserHeatingDiagram.gif"
-           alt="Laser heating demo" width="300" />
+           alt="Laser heating demo" width="390" />
       <br />
       <sub><em>The laser power modulates in response to the worm moving.</em></sub>
       <br />
     </td>
     <td valign="top">
-      <p>In this novel project, I created a system to provide a precise, but entirely manipulatable artificial environment to the nematodes under our microscope: a worm's version of The Matrix, if you will.<br />
+      <p>In this novel project, I created a system to provide a precise, but entirely manipulatable border="0" cellspacing="0" cellpadding="0" role="presentation" artificial environment to the nematodes under our microscope: a worm's version of The Matrix, if you will.<br />
       To achieve this, we track the worm on our microscope and perform our <a href="https://doi.org/10.1016/j.cell.2023.07.035">standard freely-moving full-brain recording</a>.</p>
     </td>
   </tr>
@@ -48,21 +48,18 @@ Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/)
 That position tracking is still used to keep the worm centered in the field of view, but is now also used to modulate the power of our NIR laser. We specify an environment, say starting at 20°C and increasing 1° for every cm to the right, decreasing the same to the left. As the worm moves around, the system calculates the required laser power to make our Neo experience the temperature it should. This includes the individual oscillations of the head the worm makes while moving, which are sub-mm and less than a few seconds in duration, but vital to their sensory collection and sampling of the environment. Thus, we must both track the head precisely and be able to modulate the temperature on the order of 0.01°C. To achieve this fast control, and temperatures lower than the ambient environment, I developed a novel, but simple, cooling system which is able to provide controllable baseline environmental change without interfering with the microscope imaging wavelengths, laser heating wavelength, tracking camera, or worm.
 
 
-<div width="320">
-    
-</div>
-<table>
+<table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
-    <td valign="top" width="320">
+    <td valign="top" width="330">
       <img src="images/Flavell/UntitledLaserProject/LaserHeatingCoolingDiagram.gif"
-        alt="Laser heating demo" width="300" />
+        alt="Laser heating demo" width="320" />
         <br />
         <sub><em>Cooling allows for simulated temperature decrease.</em></sub>
         <br />
     </td>
     <td valign="top">
       <img src="images/Flavell/UntitledLaserProject/CoolingSlide.jpg"
-        alt="Cooling Slide" width="300" />
+        alt="Cooling Slide" width="320" />
         <br />
         <sub><em>A custom partially 3D-printed component of the cooling system.</em></sub>
         <br />
@@ -78,6 +75,9 @@ In contributing to the BrainAlignNet project, I was able to extend it's applicat
 </p>
 
 ## Personal Projects
+#### Software and Web Dev
+Check out [RoosRun](https://github.com/briangoodell/RoosRun)! [Tank Game](https://github.com/bradleyramsey/TanksProject) and [GrinSync](https://github.com/GrinSync) are two school projects I'm also proud of!
+
 <!-- ### Life -->
 #### The Van
 Over COVID, I was lucky enough to be able to convert my family's minivan into a camper, with a custom futon, solar panels, and an antenna for robust cellular data. I did all of the futon woodworking, electronics wiring, and general conversion myself, and the trip was transformative. I was able to spend the first half of my first year taking classes online in National Parks, reinforcing my love of nature, but also learning how to act independently, solve problems with limited resources, and ask others for help (and directions).
@@ -91,7 +91,7 @@ Over COVID, I was lucky enough to be able to convert my family's minivan into a 
 ### Wookworking
 I'm an enthusiastic woodworker, reinforced by my 3 and a half years working in a makerspace. I've made furniture, art, and practical components for other projects. I love working with my hands, but also have come to appreciate the precision of CNC and other fabrication technologies.
 
-<table>
+<table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
     <td align="center" valign="top">
       <a href="images/RandomProjects/LovelandGuy.jpg">
@@ -106,10 +106,10 @@ I'm an enthusiastic woodworker, reinforced by my 3 and a half years working in a
       <br /><sub><em>The land around the same uncle's house, make to be the centerpiece of a train dominos set</em></sub>
     </td>
     <td align="center" valign="top">
-      <a href="images/RandomProjects/TableOil.jpg">
-        <img src="images/RandomProjects/TableOil.jpg" width="260" alt="The " />
+      <a href="images/RandomProjects/tableOil.jpg">
+        <img src="images/RandomProjects/tableOil.jpg" width="260" alt="The " />
       </a>
-      <br /><sub><em>My friend oils a beautiful walnut table as I advise him in the makerspace</em></sub>
+      <br /><sub><em>My friend oils a beautiful walnut table border="0" cellspacing="0" cellpadding="0" role="presentation" as I advise him in the makerspace</em></sub>
     </td>
   </tr>
 </table>
@@ -121,28 +121,29 @@ I'm an enthusiastic woodworker, reinforced by my 3 and a half years working in a
 I like to experiment in the kitchen, and have been recently focused on Tofu-manipulation. This exciting field has lots of potential to bring in cross-disciplinary work in high-dimensional sauce theory and even advanced breading techniques. My previous work has unfortunately been consumed before publication, but includes collecting wild raspberries and canning my own raspberry jam, making fresh, spiced, warm applesauce (divine!), and annual holiday fudge (which I share with my coworkers... :wink:)
 <div align="center" valign="top">
     <a href="images/RandomProjects/PreJelly.jpg">
-    <img src="images/RandomProjects/PreJelly.jpg" width="100" alt="Pre-jelly" />
+    <img src="images/RandomProjects/PreJelly.jpg" width="200" alt="Pre-jelly" />
     </a>
     <br /><sub><em>Pre-Jam (the trial batch)</em></sub>
 </div>
 
 ### Miscalanous Crafting
 I've helped a friend create a fake pool ball to propose to his girlfriend (she used to always steal the 6 ball at his house when they were in high school), engraved the mountains around my uncle's house into wine glasses (another gift), sewed, embroidered, and generally just had fun!
-<table>
-  <tr>
-    <td align="center" valign="top">
-      <a href="images/RandomProjects/MountainGlass.jpg">
-        <img src="images/RandomProjects/MountainGlass.jpg" width="260" alt="A glass with beautifully, expertly, engraved mountains on it. Really makes you want to hire the person who did it" />
-      </a>
-      <br /><sub><em>The Mountains in Minature</em></sub>
-    </td>
-    <td align="center" valign="top">
-      <a href="images/RandomProjects/ScaryChocolate.jpg">
-        <img src="images/RandomProjects/ScaryChocolate.jpg" width="100" alt="Ahh!" />
-      </a>
-      <br /><sub><em>Ahh!</em></sub>
-    </td>
-  </tr>
-</table>
-
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+    <tr>
+      <td align="center" valign="top">
+        <a href="images/RandomProjects/MountainGlass.jpg">
+          <img src="images/RandomProjects/MountainGlass.jpg" width="300" alt="A glass with beautifully, expertly, engraved mountains on it. Really makes you want to hire the person who did it" />
+        </a>
+        <br /><sub><em>The Mountains in Minature</em></sub>
+      </td>
+      <td align="center" valign="top">
+        <a href="images/RandomProjects/ScaryChocolate.jpg">
+          <img src="images/RandomProjects/ScaryChocolate.jpg" width="170" alt="Ahh!" />
+        </a>
+        <br /><sub><em>Ahh!</em></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- ## Hobbies -->
