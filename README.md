@@ -1,7 +1,7 @@
 # Brian Goodell
 
 ## My Work
-Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/), where I've both collaborated on work and lead my own research projects.
+Over the last year and a half, I've been employed in the [Flavell Lab](https://flavell.mit.edu/), where I've both collaborated on work and lead my own research projects.
 
 ### [AutoCellLabel Live](https://github.com/briangoodell/AutoCellLabel_Live/tree/main)
 
@@ -9,13 +9,13 @@ Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/)
   <tr>
     <td valign="top">
       <p>
-        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a deep convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent images. I extend this work by creating a network which is able to achieve high performance on one channel (upper image) instead of 4 at nearly 50 times the speed. This allows for real-time labeling of neurons (lower image), and through a novel method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation.
+        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a deep convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent images. I extend this work by creating a network which is able to achieve high performance on a single channel (upper image) instead of 4 at nearly 50 times the speed. This involved both straight optimization (memory efficiency and speed boosts doing the same computation), network improvement (loss-rewriting, clever training, and exploring inference-time gains), and problem reframing (achieving the same result in novel manner). The result is real-time labeling of neurons (lower image), and through a previously infeasible method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation and decision making.
       </p>
     </td>
     <td valign="top" align="right" width="320">
       <img src="images/Flavell/ACLL/ACL_raw.png" alt="A raw fluorescent image" width="300" />
       <br />
-      <sub><em>A Raw fluorescent volume (single channel slice).</em></sub>
+      <sub><em>A raw fluorescent volume (single channel slice).</em></sub>
       <br />
       <br />
       <br />
@@ -28,31 +28,36 @@ Most recently, I've been employed in the [Flavell Lab](https://flavell.mit.edu/)
 
 
 ### Nematode Matrix
+C. elegans are very sensitive to temperature, being able to sense changes of ±0.01°C across a single sub-mm head swing. They also can robustly learn to navigate to a temperature at which they were previously exposed to food. This provides an opportunity to modify a salient input in order to view biological, goal-oriented decision making in great detail. So, to enable this experimentation, I developed a novel system which can provide a precise, but entirely manipulatable thermal environment to a nematode under our microscope: a worm's version of The Matrix (if Neo only cared about the thermostat).
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
-    <td valign="top" width="400">
+    <td valign="top" width="420">
       <img src="images/Flavell/UntitledLaserProject/LaserHeatingDiagram.gif"
-           alt="Laser heating demo" width="390" />
+           alt="Laser heating demo" width="410" />
       <br />
-      <sub><em>The laser power modulates in response to the worm moving.</em></sub>
+      <sub><em>The laser power is modulated in response to the worm moving. The stage counteracts the movement to keep the worm centered.</em></sub>
       <br />
     </td>
     <td valign="top">
-      <p>In this novel project, I created a system to provide a precise, but entirely manipulatable border="0" cellspacing="0" cellpadding="0" role="presentation" artificial environment to the nematodes under our microscope: a worm's version of The Matrix, if you will.<br />
-      To achieve this, we track the worm on our microscope and perform our <a href="https://doi.org/10.1016/j.cell.2023.07.035">standard freely-moving full-brain recording</a>.</p>
+      <p><br />
+      To achieve this, we track the worm on our microscope and perform our <a href="https://doi.org/10.1016/j.cell.2023.07.035">standard freely-moving full-brain recording</a>. The position reported by our tracking setup is still used to keep the worm centered in the field of view, but is now also used to modulate the power of our NIR laser. We specify an environment, say starting at 20°C and increasing 1° for every cm to the right, decreasing the same to the left. As the worm moves around, the system calculates the required laser power to make our Neo experience the temperature it should. This includes the individual oscillations of the head the worm makes while moving, which are tiny and less than a second or so in duration, but vital to their sensory collection and sampling of the environment. Thus, we must both track the head precisely and be able to modulate the temperature on the order of 0.01°C. To achieve this fast control, and temperatures lower than the ambient environment, I developed a novel, but simple, cooling system which is able to provide controllable baseline environmental change without interfering with the microscope imaging wavelengths, laser heating wavelength, tracking camera, or worm.</p>
     </td>
   </tr>
 </table>
 
-That position tracking is still used to keep the worm centered in the field of view, but is now also used to modulate the power of our NIR laser. We specify an environment, say starting at 20°C and increasing 1° for every cm to the right, decreasing the same to the left. As the worm moves around, the system calculates the required laser power to make our Neo experience the temperature it should. This includes the individual oscillations of the head the worm makes while moving, which are sub-mm and less than a few seconds in duration, but vital to their sensory collection and sampling of the environment. Thus, we must both track the head precisely and be able to modulate the temperature on the order of 0.01°C. To achieve this fast control, and temperatures lower than the ambient environment, I developed a novel, but simple, cooling system which is able to provide controllable baseline environmental change without interfering with the microscope imaging wavelengths, laser heating wavelength, tracking camera, or worm.
+
+The vital difference between this system and any standard thermotaxis rig is not only that we can create any arbitrary environment, but that we can *change it instantly*. This means, we can view where in a worm's movement it decides to reorient towards a favorable temperature by changing the environment its experiencing at precise moments in its decision making process. We can determine how much it accumulates information vs making an in-the-moment decision. We can decouple head movement from body movement in calculating the experienced temperature to determine the nature of proprioception in their movement and environmental understanding. We can even provide physically impossible environments to test for internal rules which might allow for navigation.
+
+The real potential, however, comes from the combinations of my two projects, and their application when it comes to understanding internal computation. Not only does this system allow us to replay the exact same temperature profile (sensory input) to multiple worms to see how variations in neural activity are dependent (or not) on a given sensory input, but we can cleverly manipulate that input. Yes, we can change things offline before replaying a temperature experience, but we can also set up the system to provide specific online inputs when neurons are in certain states. Potentially even coaching the worm to a chosen internal state via clever sensory cues. Combined, we have immense control over the animals sensation and the ability to make intelligent use of that power, rather than just analyzing our perturbations post hoc. This is truly exciting, and I can't wait to see what we discover!
+
 
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
-    <td valign="top" width="330">
+    <td valign="top" width="350">
       <img src="images/Flavell/UntitledLaserProject/LaserHeatingCoolingDiagram.gif"
-        alt="Laser heating demo" width="320" />
+        alt="Laser heating demo" width="340" />
         <br />
         <sub><em>Cooling allows for simulated temperature decrease.</em></sub>
         <br />
@@ -68,7 +73,7 @@ That position tracking is still used to keep the worm centered in the field of v
 </table>
 
 ### [BrainAlignNet](https://doi.org/10.7554/eLife.108159.1)
-In contributing to the BrainAlignNet project, I was able to extend it's application to another entire species. This was relatively straightforward, but still required careful consideration, implementation, and adjustment. Ultimately, it showed that our pipeline was robust and able to be extended to animals in entirely different branches of life (jellyfish) than what it was originally designed for (worms).
+In contributing to the BrainAlignNet project, I was able to extend its application to another entire species. This was relatively straightforward, but still required careful consideration, implementation, and adjustment. Ultimately, it showed that our pipeline was robust and able to be extended to animals in entirely different branches of life (jellyfish) than what it was originally designed for (worms).
 
 <p align="center">
 <img src="images/Flavell/BAN/BAN_Figure_6.png" alt="Alt text" width="300"/>
@@ -118,7 +123,7 @@ I'm an enthusiastic woodworker, reinforced by my 3 and a half years working in a
 <!-- skip for now -->
 
 ### Cooking
-I like to experiment in the kitchen, and have been recently focused on Tofu-manipulation. This exciting field has lots of potential to bring in cross-disciplinary work in high-dimensional sauce theory and even advanced breading techniques. My previous work has unfortunately been consumed before publication, but includes collecting wild raspberries and canning my own raspberry jam, making fresh, spiced, warm applesauce (divine!), and annual holiday fudge (which I share with my coworkers... :wink:)
+I like to experiment in the kitchen, and have been recently focused on Tofu-manipulation. This exciting field has lots of potential to bring in cross-disciplinary work in high-dimensional sauce theory and even advanced breading techniques. My previous work has unfortunately been consumed before publication, but includes collecting wild raspberries and canning my own raspberry jam, making fresh, spiced, warm applesauce (divine!), and annual holiday fudge (which I share with my coworkers... (hire me) :wink:)
 <div align="center" valign="top">
     <a href="images/RandomProjects/PreJelly.jpg">
     <img src="images/RandomProjects/PreJelly.jpg" width="200" alt="Pre-jelly" />
@@ -127,7 +132,7 @@ I like to experiment in the kitchen, and have been recently focused on Tofu-mani
 </div>
 
 ### Miscalanous Crafting
-I've helped a friend create a fake pool ball to propose to his girlfriend (she used to always steal the 6 ball at his house when they were in high school), engraved the mountains around my uncle's house into wine glasses (another gift), sewed, embroidered, and generally just had fun!
+I've helped a friend create a hollow pool ball in order to propose to his girlfriend (back in high school, she used to always hide the 6 ball at his house), engraved the mountains around my uncle's house into wine glasses (another gift), sewed, embroidered, and generally just had fun!
 <div align="center">
   <table border="0" cellspacing="0" cellpadding="0" role="presentation">
     <tr>
@@ -135,7 +140,7 @@ I've helped a friend create a fake pool ball to propose to his girlfriend (she u
         <a href="images/RandomProjects/MountainGlass.jpg">
           <img src="images/RandomProjects/MountainGlass.jpg" width="300" alt="A glass with beautifully, expertly, engraved mountains on it. Really makes you want to hire the person who did it" />
         </a>
-        <br /><sub><em>The Mountains in Minature</em></sub>
+        <br /><sub><em>Mountains in Minature</em></sub>
       </td>
       <td align="center" valign="top">
         <a href="images/RandomProjects/ScaryChocolate.jpg">
@@ -146,4 +151,14 @@ I've helped a friend create a fake pool ball to propose to his girlfriend (she u
     </tr>
   </table>
 </div>
-<!-- ## Hobbies -->
+
+## Other Hobbies
+In addition to making things, I love dancing, reading, and being outdoors. I'm a former Midwest Conference champion runner, Grinnell school record holder, and 4-time marathoner. In the winters, I keep running, but also love to ski! I've been attempting to get into triathlons, but while I'm able to swim and bike, I'm not very good at either, so that's a bit tough. I love to dance, having co-led both Grinnell Swing Society and Contra Dance Club, participating on MIT's ballroom dance team, and line dancing 2-3 nights a week here in Boston. Generally, I just love being active, having fun, and learning from people who are excited about a topic!
+
+
+<!-- <div align="center" valign="top">
+    <a href="images/RandomProjects/bonsai.jpg">
+    <img src="images/RandomProjects/bonsai.jpg" width="200" alt="A cat and a bonsai" />
+    </a>
+    <br /><sub><em>I recently started training my first bonsai, using a Blue Star Juniper sapling. A friendly neighborhood cat came to give its approval!</em></sub>
+</div> -->
