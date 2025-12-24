@@ -27,7 +27,7 @@ Over the last year and a half, I've been employed in the [Flavell Lab](https://f
 </table>
 
 
-### Nematode Matrix
+### [Nematode Matrix](http://laser.briandalegoodell.com/)
 C. elegans are very sensitive to temperature, being able to sense changes of ±0.01°C across a single sub-mm head swing. They also can robustly learn to navigate to a temperature at which they were previously exposed to food. This provides an opportunity to modify a salient input in order to view biological, goal-oriented decision making in great detail. So, to enable this experimentation, I developed a novel system which can provide a precise, but entirely manipulatable thermal environment to a nematode under our microscope: a worm's version of The Matrix (if Neo only cared about the thermostat).
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
