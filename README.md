@@ -3,13 +3,13 @@
 ## My Work
 Over the last year and a half, I've been employed in the [Flavell Lab](https://flavell.mit.edu/), where I've both collaborated on work and lead my own research projects.
 
-### [AutoCellLabel Live](https://github.com/briangoodell/AutoCellLabel_Live/tree/main)
+### [AutoCellLabel Live](https://live.briandalegoodell.com)
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
     <td valign="top">
       <p>
-        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a deep convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent images. I extend this work by creating a network which is able to achieve high performance on a single channel (upper image) instead of 4 at nearly 50 times the speed. This involved both straight optimization (memory efficiency and speed boosts doing the same computation), network improvement (loss-rewriting, clever training, and exploring inference-time gains), and problem reframing (achieving the same result in novel manner). The result is real-time labeling of neurons (lower image), and through a previously infeasible method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation and decision making.
+        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a 3D convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent volumes. I extend this work by creating a network which is able to achieve high performance on a single channel (upper image) instead of four at nearly 50 times the speed. This involved both straight optimization (memory efficiency and speed boosts doing the same computation), network improvement (loss-rewriting, clever training, and exploring inference-time gains), and problem reframing (achieving the same result in novel manner). The result is real-time labeling of neurons (lower image), and through a previously infeasible method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation and decision making.
       </p>
     </td>
     <td valign="top" align="right" width="320">
@@ -27,7 +27,7 @@ Over the last year and a half, I've been employed in the [Flavell Lab](https://f
 </table>
 
 
-### [Nematode Matrix](http://laser.briandalegoodell.com/)
+### [The Laser Project](http://laser.briandalegoodell.com/)
 C. elegans are very sensitive to temperature, being able to sense changes of ±0.01°C across a single sub-mm head swing. They also can robustly learn to navigate to a temperature at which they were previously exposed to food. This provides an opportunity to modify a salient input in order to view biological, goal-oriented decision making in great detail. So, to enable this experimentation, I developed a novel system which can provide a precise, but entirely manipulatable thermal environment to a nematode under our microscope: a worm's version of The Matrix (if Neo only cared about the thermostat).
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
@@ -81,7 +81,7 @@ In contributing to the BrainAlignNet project, I was able to extend its applicati
 
 ## Personal Projects
 #### Software and Web Dev
-Check out [RoosRun](https://github.com/briangoodell/RoosRun)! [Tank Game](https://github.com/bradleyramsey/TanksProject) and [GrinSync](https://github.com/GrinSync) are two school projects I'm also proud of!
+Check out [RoosRun](https://github.com/briangoodell/RoosRun), a website I make to help my Cross Country team stay connected! [Tank Game](https://github.com/bradleyramsey/TanksProject) and [GrinSync](https://github.com/GrinSync) are two school projects I'm proud of!
 
 <!-- ### Life -->
 #### The Van
