@@ -81,7 +81,7 @@ In contributing to the BrainAlignNet project, I was able to extend its applicati
 
 ## Personal Projects
 #### Software and Web Dev
-Check out [RoosRun](https://github.com/briangoodell/RoosRun), a website I made to help my Cross Country team stay connected! [Tank Game](https://github.com/bradleyramsey/TanksProject) and [GrinSync](https://github.com/GrinSync) are two school projects I'm proud of!
+Check out [RoosRun](https://roosrun.com), a website I made to help my Cross Country team stay connected! [Tank Game](https://github.com/bradleyramsey/TanksProject) and [GrinSync](https://github.com/GrinSync) are two school projects I'm proud of!
 
 <!-- ### Life -->
 #### The Van
