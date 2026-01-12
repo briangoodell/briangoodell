@@ -1,7 +1,7 @@
 # Brian Goodell
 
 ## My Work
-Over the last year and a half, I've been employed in the [Flavell Lab](https://flavell.mit.edu/), where I've both collaborated on work and lead my own research projects.
+Over the last year and a half, I have been employed in the [Flavell Lab](https://flavell.mit.edu/), where I both collaborate on projects and lead my own research.
 
 ### [AutoCellLabel Live](https://live.briandalegoodell.com)
 
@@ -9,7 +9,7 @@ Over the last year and a half, I've been employed in the [Flavell Lab](https://f
   <tr>
     <td valign="top">
       <p>
-        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a 3D convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent volumes. I extend this work by creating a network which is able to achieve high performance on a single channel (upper image) instead of four at nearly 50 times the speed. This involved both straight optimization (memory efficiency and speed boosts doing the same computation), network improvement (loss-rewriting, clever training, and exploring inference-time gains), and problem reframing (achieving the same result in novel manner). The result is real-time labeling of neurons (lower image), and through a previously infeasible method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation and decision making.
+        <a href="https://doi.org/10.7554/eLife.108159.1">AutoCellLabeler</a> is a 3D convolutional network which achieves very high accuracy on neuron identification in multi-channel fluorescent volumes. I extend this work by creating a network which is able to achieve high performance on a single channel (upper image) instead of four at nearly 50 times the speed. This involved both straight optimization (memory efficiency and speed boosts doing the same computation), network improvement (loss-rewriting, clever training, and exploring inference-time gains), and problem reframing (achieving the same result in a novel manner). The result is real-time labeling of neurons (lower image), and through a previously infeasible method, online trace extraction. This work lays a foundation for new experiments using the real state of the entire animal's brain to extract the basis of biological computation and decision making.
       </p>
     </td>
     <td valign="top" align="right" width="320">
@@ -26,6 +26,8 @@ Over the last year and a half, I've been employed in the [Flavell Lab](https://f
   </tr>
 </table>
 
+[Learn more about ACL Live](https://live.briandalegoodell.com/)
+
 
 ### [The Laser Project](http://laser.briandalegoodell.com/)
 C. elegans are very sensitive to temperature, being able to sense changes of ±0.01°C across a single sub-mm head swing. They also can robustly learn to navigate to a temperature at which they were previously exposed to food. This provides an opportunity to modify a salient input in order to view biological, goal-oriented decision making in great detail. So, to enable this experimentation, I developed a novel system which can provide a precise, but entirely manipulatable thermal environment to a nematode under our microscope: a worm's version of The Matrix (if Neo only cared about the thermostat).
@@ -40,18 +42,16 @@ C. elegans are very sensitive to temperature, being able to sense changes of ±0
       <br />
     </td>
     <td valign="top">
-      <p><br />
-      To achieve this, we track the worm on our microscope and perform our <a href="https://doi.org/10.1016/j.cell.2023.07.035">standard freely-moving full-brain recording</a>. The position reported by our tracking setup is still used to keep the worm centered in the field of view, but is now also used to modulate the power of our NIR laser. We specify an environment, say starting at 20°C and increasing 1° for every cm to the right, decreasing the same to the left. As the worm moves around, the system calculates the required laser power to make our Neo experience the temperature it should. This includes the individual oscillations of the head the worm makes while moving, which are tiny and less than a second or so in duration, but vital to their sensory collection and sampling of the environment. Thus, we must both track the head precisely and be able to modulate the temperature on the order of 0.01°C. To achieve this fast control, and temperatures lower than the ambient environment, I developed a novel, but simple, cooling system which is able to provide controllable baseline environmental change without interfering with the microscope imaging wavelengths, laser heating wavelength, tracking camera, or worm.</p>
+      <p>
+  We track the worm to keep it centered in the field of view, but also use that info to modulate the power of our NIR laser. We can specify an environment, say starting at 20°C and increasing 1° for every cm to the right, decreasing similarly to the left. As the worm moves around, the system calculates the required laser power for the worm to experience the proper temperature, even across a single several-second, sub-mm head swing. To achieve this fast control -- and temperatures lower than the ambient environment -- I developed a novel, but simple, cooling system which is able to provide controllable baseline environmental change without interfering with the microscope imaging wavelengths, laser heating wavelength, tracking camera, or worm.</p>
     </td>
   </tr>
 </table>
 
 
-The vital difference between this system and any standard thermotaxis rig is not only that we can create any arbitrary environment, but that we can *change it instantly*. This means, we can view where in a worm's movement it decides to reorient towards a favorable temperature by changing the environment its experiencing at precise moments in its decision making process. We can determine how much it accumulates information vs making an in-the-moment decision. We can decouple head movement from body movement in calculating the experienced temperature to determine the nature of proprioception in their movement and environmental understanding. We can even provide physically impossible environments to test for internal rules which might allow for navigation.
+The vital difference between this system and any standard thermotaxis rig is not only that we can create any arbitrary environment, but that we can *change it instantly*. This enables unique experiments to isolate specific moments in its decision making process. We can determine how much it accumulates information vs making an in-the-moment decision. We can decouple head movement from body movement in calculating the experienced temperature to determine the nature of proprioception in their movement and environmental understanding. We can even provide physically impossible environments to test for internal rules which might allow for navigation.
 
-The real potential, however, comes from the combinations of my two projects, and their application when it comes to understanding internal computation. Not only does this system allow us to replay the exact same temperature profile (sensory input) to multiple worms to see how variations in neural activity are dependent (or not) on a given sensory input, but we can cleverly manipulate that input. Yes, we can change things offline before replaying a temperature experience, but we can also set up the system to provide specific online inputs when neurons are in certain states. Potentially even coaching the worm to a chosen internal state via clever sensory cues. Combined, we have immense control over the animals sensation and the ability to make intelligent use of that power, rather than just analyzing our perturbations post hoc. This is truly exciting, and I can't wait to see what we discover!
-
-
+[Learn more about the Laser Project](https://live.briandalegoodell.com/)
 
 <table border="0" cellspacing="0" cellpadding="0" role="presentation">
   <tr>
@@ -72,6 +72,9 @@ The real potential, however, comes from the combinations of my two projects, and
   </tr>
 </table>
 
+The real potential, however, comes from the combinations of my two projects, and their application when it comes to understanding internal computation. It's now simple to replay the exact same temperature profile (sensory input) to multiple worms to see how variations in neural activity are dependent (or not) on a given sensory input. Plus, we can intentionally and specifically manipulate that input based on how the brain responds. We can try to coach the worm to a chosen internal state via clever sensory cues. See how different inputs are processed depending on the current real state of the animal. Combined, we have immense control over the animal's sensation and the ability to make intelligent use of that power, rather than just analyzing our perturbations post hoc. This is truly exciting, and I can't wait to see what we discover!
+
+
 ### [BrainAlignNet](https://doi.org/10.7554/eLife.108159.1)
 In contributing to the BrainAlignNet project, I was able to extend its application to another entire species. This was relatively straightforward, but still required careful consideration, implementation, and adjustment. Ultimately, it showed that our pipeline was robust and able to be extended to animals in entirely different branches of life (jellyfish) than what it was originally designed for (worms).
 
@@ -85,7 +88,7 @@ Check out [RoosRun](https://roosrun.com), a website I made to help my Cross Coun
 
 <!-- ### Life -->
 #### The Van
-Over COVID, I was lucky enough to be able to convert my family's minivan into a camper, with a custom futon, solar panels, and an antenna for robust cellular data. I did all of the futon woodworking, electronics wiring, and general conversion myself, and the trip was transformative. I was able to spend the first half of my first year taking classes online in National Parks, reinforcing my love of nature, but also learning how to act independently, solve problems with limited resources, and ask others for help (and directions).
+Over COVID, I was lucky enough to be able to convert my family's minivan into a camper, with a custom futon, solar panels, and an antenna for robust cellular data. I did all of the futon woodworking, electronics wiring, and general conversion myself, and the trip was transformative. I was able to spend the half of my first year taking classes online in National Parks, reinforcing my love of nature, having independent responsibility, solving problems with limited resources, and learning to ask others for help (and directions).
 <div align="center" valign="top">
     <a href="images/RandomProjects/BuffaloClass.jpg">
     <img src="images/RandomProjects/BuffaloClass.jpg" width="300" alt="Pre-jelly" />
@@ -131,8 +134,8 @@ I like to experiment in the kitchen, and have been recently focused on Tofu-mani
     <br /><sub><em>Pre-Jam (the trial batch)</em></sub>
 </div>
 
-### Miscalanous Crafting
-I've helped a friend create a hollow pool ball in order to propose to his girlfriend (back in high school, she used to always hide the 6 ball at his house), engraved the mountains around my uncle's house into wine glasses (another gift), sewed, embroidered, and generally just had fun!
+### Miscellaneous Crafting
+I've helped a friend create a hollow pool ball in order to propose to his girlfriend (back in high school, she used to always hide the 6 ball at his house), engraved the mountains around my uncle's house into wine glasses (another gift), [helped myself wake up in the morning](https://www.tiktok.com/@grinnellcollege/video/7327729021465251114?is_from_webapp=1&web_id=7318489099631281707), sewed, embroidered, and generally just had fun!
 <div align="center">
   <table border="0" cellspacing="0" cellpadding="0" role="presentation">
     <tr>
@@ -140,7 +143,7 @@ I've helped a friend create a hollow pool ball in order to propose to his girlfr
         <a href="images/RandomProjects/MountainGlass.jpg">
           <img src="images/RandomProjects/MountainGlass.jpg" width="300" alt="A glass with beautifully, expertly, engraved mountains on it. Really makes you want to hire the person who did it" />
         </a>
-        <br /><sub><em>Mountains in Minature</em></sub>
+        <br /><sub><em>Mountains in Miniature</em></sub>
       </td>
       <td align="center" valign="top">
         <a href="images/RandomProjects/ScaryChocolate.jpg">
