@@ -75,7 +75,7 @@ The vital difference between this system and any standard thermotaxis rig is not
 The real potential, however, comes from the combinations of my two projects, and their application when it comes to understanding internal computation. It's now simple to replay the exact same temperature profile (sensory input) to multiple worms to see how variations in neural activity are dependent (or not) on a given sensory input. Plus, we can intentionally and specifically manipulate that input based on how the brain responds. We can try to coach the worm to a chosen internal state via clever sensory cues. See how different inputs are processed depending on the current real state of the animal. Combined, we have immense control over the animal's sensation and the ability to make intelligent use of that power, rather than just analyzing our perturbations post hoc. This is truly exciting, and I can't wait to see what we discover!
 
 
-### [BrainAlignNet](https://doi.org/10.7554/eLife.108159.1)
+### [BrainAlignNet](https://doi.org/10.7554/eLife.108159.2)
 In contributing to the BrainAlignNet project, I was able to extend its application to another entire species. This was relatively straightforward, but still required careful consideration, implementation, and adjustment. Ultimately, it showed that our pipeline was robust and able to be extended to animals in entirely different branches of life (jellyfish) than what it was originally designed for (worms).
 
 <p align="center">
